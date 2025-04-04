@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mandeep Singh | Developer Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to bottom right, #12002f, #310046);
+      color: #ffffff;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    .cursor, .follower {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 10000;
+    }
+
+    .cursor {
+      width: 10px;
+      height: 10px;
+      background: #fff;
+    }
+
+    .follower {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #bb86fc;
+      background: rgba(187, 134, 252, 0.1);
+    }
+
+    header {
+      text-align: center;
+      padding: 120px 20px 80px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: #bb86fc;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 0 auto 80px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+      border-left: 6px solid #bb86fc;
+      padding-left: 15px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #bb86fc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #888;
+    }
+
+    .planet {
+      position: absolute;
+      border-radius: 50%;
+      animation: spin 30s linear infinite;
+      z-index: 0;
+      opacity: 0.3;
+    }
+
+    .planet1 {
+      width: 150px;
+      height: 150px;
+      top: 20%;
+      left: 5%;
+      background: radial-gradient(circle, #e040fb, #8e24aa);
+    }
+
+    .planet2 {
+      width: 100px;
+      height: 100px;
+      bottom: 10%;
+      right: 15%;
+      background: radial-gradient(circle, #00e5ff, #00796b);
+    }
+
+    .planet3 {
+      width: 80px;
+      height: 80px;
+      top: 70%;
+      left: 35%;
+      background: radial-gradient(circle, #ffc107, #ff5722);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .robot {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .robot img {
+      width: 150px;
+      transition: transform 0.4s ease;
+    }
+
+    .robot:hover img {
+      transform: scale(1.1);
+    }
+
+    .robot p {
+      margin-top: 20px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .robot:hover p {
+      opacity: 1;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="planet planet1"></div>
+  <div class="planet planet2"></div>
+  <div class="planet planet3"></div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="follower" id="follower"></div>
+
+  <header>
+    <h1>Mandeep Singh</h1>
+    <p>B.C.A Graduate | Full Stack Developer | Available for Hire</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a creative and disciplined web developer with a Bachelor's in Computer Applications. My strength lies in crafting modern, responsive websites and applications using cutting-edge technologies.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Applications (B.C.A)</strong></p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Frontend: HTML, CSS, JavaScript, React.js</li>
+      <li>Backend: Python, Django</li>
+      <li>Databases: MySQL, MongoDB</li>
+      <li>Version Control: Git, GitHub</li>
+      <li>UI/UX & Responsive Design</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Portfolio Website:</strong> A 3D interactive portfolio with cursor effects, planets, and animations.</li>
+      <li><strong>E-Commerce App:</strong> Built with React and Firebase featuring dynamic cart and user authentication.</li>
+      <li><strong>Blog Platform:</strong> A scalable CMS with Django and MySQL integration.</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: mandeep@example.com</p>
+    <p>GitHub: <a href="#">github.com/mandeep</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/mandeep</a></p>
+  </section>
+
+  <div class="robot">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Robot Guide">
+    <p>🤖 Hello! Hover on me to reveal some guidance for this cosmic journey!</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Mandeep Singh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    const follower = document.getElementById('follower');
+
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      follower.style.left = e.clientX + 'px';
+      follower.style.top = e.clientY + 'px';
+    });
+  </script>
+</body>
+</html>
