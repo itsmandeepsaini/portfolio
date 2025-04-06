@@ -3,10 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
   <title>Interactive Space Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   <style>
+    @media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .sidebar .profile {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sidebar .profile img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .sidebar .profile h3 {
+    font-size: 1rem;
+  }
+
+  /* Add other mobile-friendly changes below */
+  .main-content {
+    padding: 10px;
+  }
+
+  .projects, .skills, .education {
+    grid-template-columns: 1fr;
+  }
+}
+
     :root {
       --primary: #bb86fc;
       --secondary: #ffd700;
@@ -32,7 +66,7 @@
       overflow-x: hidden;
       position: relative;
     }
-    @media only screen and {max-width: 800px}
+
 
     /* Preloader */
     #preloader {
